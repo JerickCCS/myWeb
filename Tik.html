@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jerick</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    p {
+      color: white;
+    }
+
+    .card.hoverable:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+      transform: scale(1.05);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .section {
+      background: #02071D;
+    }
+
+    #pr2 {
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" style="background-color: #02071D;" role="navigation" aria-label="main navigation">
+    
+    <div class="navbar-brand">
+      
+      <a class="navbar-item" href="#">
+        <img src="/logo.png" alt="Your Logo" width="100">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" style="color: white;">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu" style="background-color: #02071D;">
+      <div class="navbar-start">
+        <a class="navbar-item has-text-white" href="#home">
+          Home
+        </a>
+        <a class="navbar-item has-text-white" href="#about">
+          About
+        </a>
+        <a class="navbar-item has-text-white" href="#contact">
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  
+  <section class="hero is-info is-fullheight" style="background-image: url('/Picsart_23-06-10_14-57-40-045.jpg'); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;" id="home">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          Jerick
+        </h1>
+        <h2 class="subtitle">
+          Web Developer
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="title is-2 has-text-white">About Me</h2>
+      <p class="subtitle is-5 has-text-white">Get to know me and my journey.</p>
+
+      <div class="columns is-multiline">
+
+        <div class="column is-full-desktop is-half-tablet">
+          <div class="card hoverable" style="background-color: #D00000;">
+            <div class="card-content">
+              <p class="title is-4 has-text-white">My Journey</p>
+              <p>Hi, I'm Jerick, a 2nd year BSIT student passionate about web development. My tech journey started with coding exploration, evolving from HTML and CSS to JavaScript. I'm driven to learn, adapt, and create impactful projects.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-full-desktop is-half-tablet">
+          <div class="card hoverable" style="background-color: #D00000;">
+            <div class="card-content">
+              <p class="title is-4 has-text-white">My Skills</p>
+              <p>I specialize in front-end technologies, including HTML, CSS, and JavaScript, bringing a solid foundation and 2 years of experience in web development. Eager to learn and adapt to new technologies, I'm exploring frameworks like Bootstrap and libraries like jQuery. Let's collaborate and bring innovative ideas to life!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-full-desktop is-half-tablet">
+          <div class="card hoverable" style="background-color: #D00000;">
+            <div class="card-content">
+              <p class="title is-4 has-text-white">My Approach</p>
+              <p>I believe in a collaborative and innovative approach to web development, striving to create user-centric and visually appealing digital experiences. My goal is to leverage technology to solve real-world problems and make a positive impact on the lives of users. Let's connect and collaborate to create something amazing!</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="title is-2 has-text-white">Projects</h2>
+      <p class="subtitle is-5 has-text-white">Explore some of my highlighted projects.</p>
+
+      <div class="columns is-multiline">
+
+        
+        <div class="column is-full-desktop is-half-tablet">
+          <div class="card hoverable" style="background-color: #D00000;">
+            <div class="card-image">
+              <figure class="image is-4by4">
+                <img src="/OIG..jpeg" alt="Project 1 Image" id="pr2">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-4 has-text-white">Calcify</p>
+              <p>
+                Click "See More" for additional details.
+              </p>
+              <button class="button is-link button is-primary" style="background: #02071D" onclick="toggleContent('project1')">See More</button>
+              <div id="project1-more" style="display: none;">
+                <p>
+                  "Introducing 'Calcify,' a sleek and versatile calculator crafted with HTML, CSS, and JavaScript. This user-friendly calculator brings a modern touch to number crunching, featuring a responsive design for seamless use on any device. With a clean interface and intuitive functionality, Calcify makes mathematical operations a breeze. Whether you're tackling simple calculations or complex equations, this calculator provides a reliable tool for your mathematical needs. Explore advanced functions, enjoy real-time results, and experience a visually pleasing calculator that enhances your computational tasks. Calcify is not just a calculator; it's a stylish companion for your everyday arithmetic adventures."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="column is-full-desktop is-half-tablet">
+          <div class="card hoverable" style="background-color: #D00000;">
+            <div class="card-image">
+              <figure class="image is-4by4">
+                <img src="/OIG (4).jpeg" alt="Project 2 Image" class="is-square" id="pr2">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-4 has-text-white">Space Impact Clone</p>
+              <p>
+                Click "See More" for additional details.
+              </p>
+              <button class="button is-link button is-primary" style="background: #02071D" onclick="toggleContent('project2')">See More</button>
+              <div id="project2-more" style="display: none;">
+                <p>
+                  "Embark on an intergalactic journey with 'Space Impact Clone,' a thrilling arcade-style game designed for the Tic-80 mini computer. Blast through waves of alien invaders, navigate treacherous asteroid fields, and engage in epic space battles. With retro-inspired graphics and addictive gameplay, this homage to the classic 'Space Impact' delivers an immersive experience where your piloting skills are put to the ultimate test. Upgrade your spacecraft, unlock powerful weapons, and conquer the cosmos in this action-packed adventure. Get ready for a nostalgic trip to the golden era of space shooters, where each level brings new challenges and excitement. Are you prepared for the cosmic onslaught that awaits in 'Space Impact Clone'?"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="title is-2 has-text-white">Contact Me</h2>
+      <p class="subtitle is-5 has-text-white">Feel free to reach out!</p>
+
+      <div class="columns">
+        <div class="column is-half">
+          <div class="field">
+            <label class="label has-text-white">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Your Name">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label has-text-white">Email</label>
+            <div class="control">
+              <input class="input" type="email" placeholder="Your Email">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label has-text-white">Subject</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Subject">
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-half">
+          <div class="field">
+            <label class="label has-text-white">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Your Message"></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <button class="button is-primary has-text-white" style="background-color: #D00000">Send Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all "navbar-burger" elements
+      var burgerElements = document.querySelectorAll('.navbar-burger');
+
+      // Loop over each "navbar-burger" element
+      burgerElements.forEach(function(burger) {
+        // Add a click event listener on each "navbar-burger" element
+        burger.addEventListener('click', function() {
+          // Get the target from the "data-target" attribute
+          var targetId = this.dataset.target;
+          var target = document.getElementById(targetId);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          this.classList.toggle('is-active');
+          target.classList.toggle('is-active');
+        });
+      });
+    });
+
+    function toggleContent(projectId) {
+      const moreContent = document.getElementById(`${projectId}-more`);
+      if (moreContent.style.display === 'none') {
+        moreContent.style.display = 'block';
+      } else {
+        moreContent.style.display = 'none';
+      }
+    }
+  </script>
+  <footer class="has-text-white" style="background: #02071D;">
+    <div class="content has-text-centered">
+      <p>&copy; 2023 Jerick Villanueva - Portfolio</p>
+    </div>
+  </footer>
+
+  <!-- Your Content Goes Here -->
+
+</body>
+
+</html>
