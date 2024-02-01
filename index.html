@@ -262,44 +262,6 @@
     </div>
   </section>
 
-  <section class="section" id="blog">
-    <div class="container mx-auto">
-      <h1 class="title is-4 has-text-centered has-text-white">My Blog</h1>
-
-      <!-- Blog Form -->
-      <div class="blog-form">
-        <div class="field">
-          <label for="title" class="label has-text-white">Title:</label>
-          <div class="control">
-            <input type="text" id="title" name="title" class="input" placeholder="Enter your title">
-          </div>
-        </div>
-
-        <div class="field">
-          <label for="description" class="label has-text-white">Description:</label>
-          <div class="control">
-            <textarea id="description" name="description" rows="4" class="textarea" placeholder="Enter your description"></textarea>
-          </div>
-        </div>
-
-        <div class="control">
-          <button onclick="postBlog()" class="button is-primary has-text-white" style="background-color: #D00000">Post</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="recent-blogs mx-auto mt-3 has-text-centered has-text-white">
-      <p>Recent Blogs</p>
-    </div>
-
-    <!-- Blog Posts -->
-    <div id="blog-posts" class="container">
-      <h2 class="title is-2 has-text-centered">Blog Title</h2>
-      <p class="subtitle is-5 has-text-centered">Blog Description</p>
-      <!-- Actual blog posts will be dynamically added here -->
-    </div>
-  </section>
-
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       // Get all "navbar-burger" elements
@@ -329,56 +291,7 @@
       }
     }
 
-    // Function to post a new blog
-    function postBlog() {
-      const title = document.getElementById('title').value;
-      const description = document.getElementById('description').value;
 
-      if (title && description) {
-        const post = {
-          title,
-          description,
-        };
-
-        // Get existing blog posts from local storage
-        const posts = JSON.parse(localStorage.getItem('blogPosts')) || [];
-
-        // Add the new blog post
-        posts.push(post);
-
-        // Save the updated list of blog posts to local storage
-        localStorage.setItem('blogPosts', JSON.stringify(posts));
-
-        // Display the updated blog posts
-        displayBlogPosts();
-      } else {
-        alert('Please enter both title and description.');
-      }
-    }
-
-    // Function to display blog posts
-    function displayBlogPosts() {
-      const blogPostsContainer = document.getElementById('blog-posts');
-      blogPostsContainer.innerHTML = ''; // Clear previous content
-
-      // Get blog posts from local storage
-      const posts = JSON.parse(localStorage.getItem('blogPosts')) || [];
-
-      // Display each blog post
-      posts.forEach((post, index) => {
-        const postElement = document.createElement('div');
-        postElement.innerHTML = `
-        <div class="bg-white p-4 mb-4 border rounded-md">
-          <h2 class="text-xl font-bold mb-2">${post.title}</h2>
-          <p>${post.description}</p>
-        </div>
-      `;
-        blogPostsContainer.appendChild(postElement);
-      });
-    }
-
-    // Initial display of blog posts on page load
-    displayBlogPosts();
   </script>
   <footer class="has-text-white" style="background: #02071D;">
     <div class="content has-text-centered">
